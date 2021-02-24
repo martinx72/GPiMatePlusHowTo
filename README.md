@@ -81,4 +81,10 @@ video_scale_integer = "true"
 video_aspect_ratio = "1.0000"
 ```
 
+6. Now, let us make even console works in right orientation
+modify /boot/cmdline.txt (please make sure everything is in one single line)
+```markdown
+console=serial0,115200 console=tty3 root=PARTUUID=f901e9ec-02 rootfstype=ext4 elevator=deadline fsck.repair=yes rootwait loglevel=3 consoleblank=0 plymouth.enable=0 splash quiet vt.global_cursor_default=0 video=DSI-1:240x320,rotate=270 
+```
+
 Have fun!

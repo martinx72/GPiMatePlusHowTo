@@ -10,7 +10,7 @@ The RetroPie image I have tested the with this toturial is RetroPie v4.7.1 Relea
 **3.** add these settings at the end of original **/boot/config.txt**
 ```markdown
 # default CEC name
-cec_osd_name=kaitogpi
+cec_osd_name=gpimateplus
 
 avoid_safe_mode=1
 
@@ -63,6 +63,8 @@ emulationstation --screenrotate 1 --screensize 320 240
 
 Now, your EmulationStation should be rotated correctly.
 
+And don't forget to adjust the **Sound Settings** in EmulationStation, to set **Audio Device** to **Headphone**.
+
 
 **5.** Time to deal with RetroArch cfg file **/opt/retropie/configs/all/retroarch.cfg**
 ```markdown
@@ -97,4 +99,5 @@ to
 
 
 
-Have fun!
+
+**Have fun!**

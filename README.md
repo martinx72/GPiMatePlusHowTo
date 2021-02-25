@@ -5,7 +5,11 @@ The RetroPie image I have tested the with this toturial is RetroPie v4.7.1 Relea
 
 **1.** To have a RetroPie SD card ready. Must be the RetroPie for RPi4/Pi400 version from: https://retropie.org.uk/download/
 
-**2.** Get the dtbo file from RetroFlag official site: http://download.retroflag.com/Products/GPi_Case/GPi_Case_patch.zip and unzip the **dpi24.dtbo** of the zip file you just downloaded to **dpi24_gpi.dtbo**, and place **dpi24_gpi.dtbo** in the **overlays** sub-folder of boot partition of SD card.
+**2.** Get the dtbo file from RetroFlag official site: http://download.retroflag.com/Products/GPi_Case/GPi_Case_patch.zip 
+
+unzip the **dpi24.dtbo** of the zip file you just downloaded and rename it to **dpi24_gpi.dtbo**, 
+
+now place this **dpi24_gpi.dtbo** in the **overlays** sub-folder of boot partition of SD card.
  
 **3.** add these settings at the end of original **/boot/config.txt**
 ```markdown

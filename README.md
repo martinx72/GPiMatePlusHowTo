@@ -1,13 +1,13 @@
+
 # GPiMatePlusHowTo
 How to make official RetroPie work with RgR GPiMate Plus for CM4,
 The RetroPie image I have tested the with this toturial is RetroPie v4.7.1 Released November 4, 2020.
 
-1. To have a RetroPie SD card ready. Must be the RetroPie for RPi4/Pi400 version from: https://retropie.org.uk/download/
+**1.** To have a RetroPie SD card ready. Must be the RetroPie for RPi4/Pi400 version from: https://retropie.org.uk/download/
 
-2. Get the dtbo file from RetroFlag official site: http://download.retroflag.com/Products/GPi_Case/GPi_Case_patch.zip and unzip the dpi24.dtbo of the zip file you just downloaded to dpi24_gpi.dtbo, and place dpi24_gpi.dtbo in the overlays sub-folder of boot partition of SD card.
+**2.** Get the dtbo file from RetroFlag official site: http://download.retroflag.com/Products/GPi_Case/GPi_Case_patch.zip and unzip the **dpi24.dtbo** of the zip file you just downloaded to **dpi24_gpi.dtbo**, and place **dpi24_gpi.dtbo** in the **overlays** sub-folder of boot partition of SD card.
  
-3. add these settings at the end of original config.txt
-
+**3.** add these settings at the end of original **/boot/config.txt**
 ```markdown
 # default CEC name
 cec_osd_name=kaitogpi
@@ -49,15 +49,14 @@ dpi_mode=87
 dpi_output_format=0x6016
 hdmi_timings=240 1 38 10 20 320 1 20 4 4 0 0 0 60 0 6400000 1
 disable_pvt=1
-
 ```
-note, to enable the WiFi/BT of CM4 (if yours has these feature builit-in), just remove dtoverlay=disable-bt or dtoverlay=disable-wifi
+note, to enable the WiFi/BT of CM4 (if yours has these feature builit-in), just remove **dtoverlay=disable-bt** or **dtoverlay=disable-wifi**
 
 
-4. Now your SD card should be ready to see the video. 
+**4.** Now your SD card should be ready to see the video. 
 
 But, EmulationStation and RetroArch won't be rotated correctly, we will take care EmulationStation lanuch script now to make it work right.
-modify /opt/retropie/configs/all/autostart.sh as below
+modify **/opt/retropie/configs/all/autostart.sh** as below
 ```markdown
 emulationstation --screenrotate 1 --screensize 320 240
 ```
@@ -65,8 +64,7 @@ emulationstation --screenrotate 1 --screensize 320 240
 Now, your EmulationStation should be rotated correctly.
 
 
-
-5. Time to deal with RetroArch cfg file /opt/retropie/configs/all/retroarch.cfg
+**5.** Time to deal with RetroArch cfg file **/opt/retropie/configs/all/retroarch.cfg**
 ```markdown
 #to rotate screen
 screen_orientation = "3"
@@ -82,21 +80,21 @@ video_aspect_ratio = "1.0000"
 ```
 
 
-6. Now, let us make even console works in right orientation
+**6**. Now, let us make even console works in right orientation
 
-add these at the very end of /boot/cmdline.txt  (please make sure everything is in one single line)
+add these at the very end of **/boot/cmdline.txt** 
+ (please make sure everything is in **one single line**)
 ```markdown
 splash vt.global_cursor_default=0 video=DSI-1:240x320,rotate=270
 ```
 
 If you don't want any kernel message printed during booting, you can simply change
-```markdown
-console=tty1
-```
+
+> console=**tty1**
+
 to 
-```markdown
-console=tty3
-```
+>console=**tty3**
+
 
 
 Have fun!

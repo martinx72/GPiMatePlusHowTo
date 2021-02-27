@@ -7,6 +7,8 @@ The RetroPie image I have tested the with this toturial is RetroPie v4.7.1 Relea
 
 **2.** Get the dtbo file from RetroFlag official site: http://download.retroflag.com/Products/GPi_Case/GPi_Case_patch.zip 
 
+Just **one file** we need from this zip, **do not** run the auto install script of this file from retroflag!!!
+
 unzip the **dpi24.dtbo** of the zip file you just downloaded and rename it to **dpi24_gpi.dtbo**, 
 
 now place this **dpi24_gpi.dtbo** in the **overlays** sub-folder of boot partition of SD card.

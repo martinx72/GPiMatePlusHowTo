@@ -88,7 +88,7 @@ video_aspect_ratio = "1.0000"
 ```
 
 
-**6**. Now, let us make even console works in right orientation
+**6**. Now, let us make even console mode worked in right orientation
 
 add these at the very end of **/boot/cmdline.txt** 
  (please make sure everything is in **one single line**)
@@ -96,7 +96,7 @@ add these at the very end of **/boot/cmdline.txt**
 splash vt.global_cursor_default=0 video=DSI-1:240x320,rotate=270
 ```
 
-If you don't want any kernel message printed during booting, you can simply change
+If you don't want any kernel message printed during booting, you can simply change below in **/boot/cmdline.txt**
 
 > console=**tty1**
 

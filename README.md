@@ -23,15 +23,18 @@ avoid_safe_mode=1
 # Set the bootloader delay to 0 seconds. The default is 1s if not specified.
 boot_delay=0
 
+# Disable on-board PCIe
+dtoverlay=disable-pcie
+
 # Disable on-board bluetooth
 dtoverlay=disable-bt
 
-#Disable on-board Wifi
+# Disable on-board Wifi
 dtoverlay=disable-wifi
 
 dtoverlay=sdtweak,overclock_50=100
 
-#enable USB for CM4
+# enable USB for CM4
 dtoverlay=dwc2,dr_mode=host
 
 #enable AUDIO

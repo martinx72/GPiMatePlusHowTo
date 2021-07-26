@@ -59,8 +59,9 @@ dpi_output_format=0x6016
 hdmi_timings=240 1 38 10 20 320 1 20 4 4 0 0 0 60 0 6400000 1
 disable_pvt=1
 ```
-note, to enable the WiFi/BT of CM4 (if yours has these feature builit-in), just remove **dtoverlay=disable-bt** or **dtoverlay=disable-wifi**
+note, to enable the WiFi/BT of CM4 (if yours has these feature builit-in), just remove **dtoverlay=disable-bt** or **dtoverlay=disable-wifi** ,
 
+And also download the **disable-pcie.dtbo** from the current repo, and place this **disable-pcie.dtbo** in the **overlays** sub-folder of boot partition of SD card.
 
 **4.** Now your SD card should be ready to see the video. 
 

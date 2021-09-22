@@ -5,7 +5,7 @@ The RetroPie image I have tested the with this toturial is RetroPie v4.7.1 Relea
 
 **1.** To have a RetroPie SD card ready. Must be the RetroPie for RPi4/Pi400 version from: https://retropie.org.uk/download/
 
-**2.** Get the dtbo file from RetroFlag official site: http://download.retroflag.com/Products/GPi_Case/GPi_Case_patch.zip 
+**2.** Get the dtbo file from RetroFlag official site: https://support.retroflag.com/Products/GPi_Case/GPi_Case_patch.zip
 
 Just **one file** we need from this zip, **do not** run the auto install script of this file from retroflag!!!
 

@@ -1,5 +1,4 @@
-
-# GPiMatePlusHowTo
+# GPiMatePlusHowTo for RetroFlag GPi Case 1 (not for GPi Case 2W)
 How to make official RetroPie work with RgR GPiMate Plus for CM4,
 The RetroPie image I have tested the with this toturial is RetroPie v4.7.1 Released November 4, 2020.
 
